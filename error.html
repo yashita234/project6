@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Error Handling Demo</h2>
+
+<p>Click the button to trigger an error.</p>
+
+<button onclick="showError()">Click Me</button>
+
+<p id="error_message"></p>
+
+<script>
+function showError() {
+    try {
+        
+        showalert("Hello User!");
+    }
+    catch(err) {
+        document.getElementById("error_message").innerHTML =
+            "Error: " + err.message;
+    }
+}
+</script>
+
+</body>
+</html>
